@@ -1,3 +1,24 @@
+#****************************************************************************************************
+#
+# Author: John Maskell                                                                              
+# Date: 10/06/17
+# Description: Read Telemac binary file, compare results with observation and plot
+# Classes:
+#     VALIDOBJECT - Telemac results file object for validation 
+#     Methods:
+#         checkVar - check user variable exists in results file
+#         plotTS - plot time-series
+#         readOBS - read tide gauge observation files
+#         nearestNode - find nearest model nodes within threshold distance from tide gauge
+#         getMesh - get Telemac mesh geometry
+#         gettelArray - get Telemac variable time-series in array
+#         getobsArray - get Observations time-series in array
+#         getRmsepks - get the rmse between Telemac and Observation HWs
+#         getPks - get indexes of HWs
+#         getXlabels - get plot xlabel to display midnight and midday and the date
+#
+#****************************************************************************************************
+
 import sys
 sys.path.append('../')
 from parsers.parserSELAFIN import SELAFIN
